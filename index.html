@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Encriptación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo">
+                <img src="assent/Logo-1.png" alt="Logo">
+            </div>
+            <div class="input-container">
+                <textarea id="texto" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="error-message"></div>
+            <div class="alert">
+                <img src="/assent/bi_exclamation-circle-fill.png" alt="">
+                <div class="note">Solo letras minúsculas y sin acentos.</div>
+            </div>
+            <div class="buttons">
+                <button class="btn encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="btn desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="right-panel">
+            <img id="image" src="assent/Muñeco.png" alt="Muñeco">
+            <div class="resultado-container">
+                <h2 class="texto1">Ningún mensaje fue encontrado</h2>
+                <p class="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button class="btn-copiar" onclick="copiar()">Copiar</button>
+        </div>
+    </div>
+    <script src="scritp.js"></script>
+</body>
+</html>
