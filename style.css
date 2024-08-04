@@ -33,6 +33,7 @@ body {
 .container {
     display: flex;
     width: 1000%;
+    max-width: 100%;
     height: 100%;
     background-color: var(--primary-color);
     border-radius: 8px;
@@ -45,6 +46,7 @@ body {
 }
 
 .left-panel {
+    width: 100%;
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -52,10 +54,7 @@ body {
 }
 
 .logo img {
-    width: 120px;
-    height: 48px;
-    margin-top: 40px;
-    margin-left: 40px;
+    margin: .5em;
 }
 
 .input-container {
@@ -84,6 +83,12 @@ textarea{
     width: 100%;
     padding: 10px;
     height: 600px;
+    height: 50%;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    border: none;
+    
     
 }
 
@@ -211,12 +216,12 @@ textarea::-webkit-scrollbar {
 
 .error-message {
     color: red;
-    font-size: 1rem;
+    font-size: 2rem;
     margin-top: 10px;
     display: none;
 }
 
-@media (min-width: 397px) and (max-width: 1200px) {
+@media (min-width: 760px) and (max-width: 1192px) {
     .container {
         flex-direction: column;/* Cambiar a fila en pantallas medianas */
     }
@@ -231,7 +236,6 @@ textarea::-webkit-scrollbar {
         margin-left: 10%;
         width: 80%;
         height: 30%;
-
         gap: 32px;
         display: flex;
         flex-direction: column;
@@ -273,23 +277,34 @@ textarea::-webkit-scrollbar {
     .right-panel img {
         display: none; /* Ocultar imagen para pantallas medianas */
     }
+    .logo img {
+        margin-right: 0px;
+    }
 }
-@media (min-width: 100px) and (max-width: 700px){
-
-    .container{
-        width: auto;
+@media (min-width: 100px) and (max-width: 759px){
+    .logo img {
+        margin-right: 0px;
+    
+    }
+    .container {
         flex-direction: column;
+        display: flex;
+        position: absolute;
+    }
+    .buttons{
+        flex-direction: column;
+        display: flex;
+        width: auto;
+        margin-top: 2rem;
+    }
+    .left-panel{
+        margin-left: 0px;
     }
     
-
-    .buttons{
-        width: auto;
-        display: block;
-        gap: 12px;
-        margin-top: 0%;
-        margin-bottom: auto;
-        
-        
-       
+    .right-panel img {
+        display: none; /* Ocultar imagen para pantallas medianas */
     }
+    
 }
+
+
