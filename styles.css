@@ -69,7 +69,7 @@ body {
     width: 100%;
     padding: 10px;
     border: none;
-    font-size: 1.2rem;
+    font-size: 2rem;
     resize: vertical;
     min-height: 50px;
     max-height: 200px;
@@ -143,25 +143,27 @@ textarea::-webkit-scrollbar {
     background-color: var(--secondary-color);
     margin-top: 20px;
     border-radius: 32px;
-    gap: 590px;
+    gap: 0%;
     text-align: center;
+    position: relative;
 
 }
 
 .right-panel img {
     width: 80%;
     height: auto;
-    margin-top: 100%;
+    margin-top: 80%;
+    
 }
 
 .resultado-container {
     flex: 1;
     width: 100%;
-    max-height: 300px;
+    max-height: 900px;
     overflow-y: auto;
     padding: 10px;
     background-color: var(--secondary-color);
-    border-radius: 8px;
+   
 }
 
 .resultado-container::-webkit-scrollbar {
@@ -191,6 +193,7 @@ textarea::-webkit-scrollbar {
     padding: 10px;
     font-size: 1rem;
     display: none;
+
 }
 
 .alert {
@@ -230,9 +233,10 @@ textarea::-webkit-scrollbar {
     .btn {
         flex: 1;
     }
+
     
 }
-@media (min-width: 76px) and (max-width: 800px){
+@media (min-width: 76px) and (max-width: 759px){
     .right-panel img {
         display: none; /* Ocultar imagen para pantallas medianas */
     }
@@ -240,7 +244,7 @@ textarea::-webkit-scrollbar {
     .right-panel {
         width: auto;
         align-items: center;
-        margin-left: 20%;
+        margin-left: 0%;
         height: 30%;
         gap: 32px;
         align-items: center;

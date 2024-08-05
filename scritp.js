@@ -53,7 +53,7 @@ function copiar() {
 }
 
 function validarTexto(texto) {
-    const regex = /^[a-z\s]+$/;
+    const regex = /^[a-zñ\s]+$/;
     return regex.test(texto);
 }
 
